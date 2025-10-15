@@ -1,0 +1,4 @@
+- name: Accueil
+  href: /
+- name: Articles
+  href: articles/

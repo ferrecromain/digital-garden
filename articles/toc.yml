@@ -1,0 +1,29 @@
+- name: Développement
+  items:
+    - name: Patrons de conceptions
+      items:
+        - href: development/patrons-de-conceptions/adapter.md
+        - href: development/patrons-de-conceptions/facade.md
+        - href: development/patrons-de-conceptions/singleton.md
+        - href: development/patrons-de-conceptions/template-method.md
+    - name: T-SQL
+      items:
+        - href: developpement/tsql/fonctions-integrees.md
+        - href: developpement/tsql/jointures.md
+        - href: developpement/tsql/modification-de-donnees.md
+    - name: .NET
+      items:
+        - name: ASP
+          items:
+            - href: development/dotnet/asp/validation-de-modeles.md
+            - href: development/dotnet/asp/creer-un-controleur-api-rest.md
+- name: Administration système
+  items:
+    - name: Windows
+      items:
+        - href: administration-systeme/windows/chiffrement-bitlocker.md
+    - name: Powershell
+      items:
+        - href: administration-systeme/powershell/dossiers-et-fichiers.md
+        
+        - href: administration-systeme/powershell/processus-et-services.md

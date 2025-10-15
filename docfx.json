@@ -1,0 +1,30 @@
+{
+    "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+    "build": {
+        "content": [
+            {
+                "files": ["**/*.{md,yml}"],
+                "exclude": ["_site/**"]
+            }
+        ],
+        "resource": [
+            {
+                "files": ["**/medias/**"],
+                "exclude": ["_site/**"]
+            }
+        ],
+        "output": "_site/",
+        "template": [
+            "default",
+            "modern",
+            "templates/custom"
+        ],
+        "globalMetadata": {
+            "_appName": "Romain FERREC",
+            "_appTitle": "Romain FERREC",
+            "_enableSearch": true,
+            "_lang": "fr",
+            "pdf": false
+        }
+    }
+}
