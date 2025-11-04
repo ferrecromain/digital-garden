@@ -2,10 +2,10 @@
   items:
     - name: Patrons de conceptions
       items:
-        - href: development/patrons-de-conceptions/adapter.md
-        - href: development/patrons-de-conceptions/facade.md
-        - href: development/patrons-de-conceptions/singleton.md
-        - href: development/patrons-de-conceptions/template-method.md
+        - href: developpement/patrons-de-conceptions/adapter.md
+        - href: developpement/patrons-de-conceptions/facade.md
+        - href: developpement/patrons-de-conceptions/singleton.md
+        - href: developpement/patrons-de-conceptions/template-method.md
     - name: T-SQL
       items:
         - href: developpement/tsql/fonctions-integrees.md
@@ -13,10 +13,11 @@
         - href: developpement/tsql/modification-de-donnees.md
     - name: .NET
       items:
+        - href: developpement/dotnet/asynchronisme.md
         - name: ASP
           items:
-            - href: development/dotnet/asp/validation-de-modeles.md
-            - href: development/dotnet/asp/creer-un-controleur-api-rest.md
+            - href: developpement/dotnet/asp/validation-de-modeles.md
+            - href: developpement/dotnet/asp/creer-un-controleur-api-rest.md
 - name: Administration système
   items:
     - name: Windows

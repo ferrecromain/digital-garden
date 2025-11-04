@@ -22,6 +22,8 @@
         "globalMetadata": {
             "_appName": "Romain FERREC",
             "_appTitle": "Romain FERREC",
+            "_appLogoPath": "medias/logo.svg",
+            "_appFaviconPath": "medias/favicon.ico",
             "_enableSearch": true,
             "_lang": "fr",
             "pdf": false

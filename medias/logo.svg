@@ -1,0 +1,40 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="38.000000pt" height="38.000000pt" viewBox="0 0 200.000000 200.000000"
+ preserveAspectRatio="xMidYMid meet">
+<metadata>
+Created by ChatGPT
+</metadata>
+<g transform="translate(0.000000,200.000000) scale(0.100000,-0.100000)"
+fill="#dddddd" stroke="none">
+
+  <!-- ANNEAU (derrière la pyramide) -->
+  <ellipse cx="1000" cy="1350" rx="520" ry="80"
+           fill="none" stroke="#6ea8fe" stroke-width="30" opacity="0.9"/>
+
+  <!-- PYRAMIDE (centrée et agrandie) -->
+  <!-- Apex (1000,1600), base y=650, base x=350↔1650 -->
+  <polygon points="1000,1600 350,650 1000,650" fill="#FCD34D"/>
+  <polygon points="1000,1600 1000,650 1650,650" fill="#D97706"/>
+  <line x1="1000" y1="1600" x2="1000" y2="650" stroke="#92400E" stroke-width="8"/>
+
+  <!-- MASQUE pour cacher l'intérieur de la pyramide -->
+  <defs>
+    <mask id="outsidePyramid">
+      <!-- Blanc = visible, Noir = masqué -->
+      <rect x="0" y="0" width="2000" height="2000" fill="white"/>
+      <!-- On masque la forme de la pyramide -->
+      <polygon points="1000,1600 350,650 1000,650" fill="black"/>
+      <polygon points="1000,1600 1000,650 1650,650" fill="black"/>
+    </mask>
+  </defs>
+
+  <!-- ANNEAU (devant la pyramide) -->
+  <ellipse cx="1000" cy="1350" rx="520" ry="80"
+           fill="none" stroke="#6ea8fe" stroke-width="30" opacity="0.9"
+           mask="url(#outsidePyramid)"/>
+
+</g>
+</svg>
