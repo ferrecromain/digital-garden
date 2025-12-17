@@ -14,7 +14,7 @@ title: Calamar
 
 ## 👨‍🍳 Préparation
 
-1. Prendre un **calamar entier**
+1. Prendre un [calamar entier][Entier]
 2. [Séparer la tête du manteau] en pincant entre les yeux d'une main puis tirer sur le manteau de l'autre.
 3. [Séparer les tentacules de la tête] en coupant au dessus des yeux. Couper les tentacules pour qu'elles aient la même longeur.
 4. [Séparer le bec des tentacules] si il est encore présent, en le pincant puis en tirant dans la direction des tentacules. Il se trouve au milieu.
