@@ -1,8 +1,8 @@
 ---
-title: Fonction intégrées
+title: Fonction intégrées basiques
 ---
 
-# Fonctions intégrées
+# Fonctions intégrées basiques
 
 ## Scalaires
 
@@ -100,30 +100,6 @@ UNION ALL SELECT
   CHOOSE(@statusId, 'Active', 'Inactive', 'Expired')
 -- Expired
 ```
-
-## Classement
-
-```sql
-SELECT
-    RANK() OVER(ORDER BY lc.MerchantName) AS RankByName,
-    RANK() OVER(PARTITION BY lc.GroupId ORDER BY MerchantName) AS RankByNameByGroup,
-    g.Name AS GroupName,
-    lc.MerchantName
-FROM [dbo].[LoyaltyCard] AS lc
-JOIN [dbo].[Group] AS g ON lc.GroupId = g.Id
-ORDER BY RankByName
-```
-
-| RankByName | RankByNameByGroup | GroupName   | MerchantName       |
-| ---------- | ----------------- | ----------- | ------------------ |
-| 1          | 1                 | Restaurant  | BurgerQueen        |
-| 2          | 1                 | Supermarket | ChampionMarket     |
-| 3          | 2                 | Supermarket | King Bazar         |
-| 4          | 2                 | Restaurant  | Master of the seas |
-| 5          | 1                 | Sport       | RoyalFitness       |
-
-> [!note]
-> D'autres fonctions de classement tel que `DENSE_RANK`, `NTILE` ou encore `ROW_NUMBER` sont referencées dans [cette documentation](https://learn.microsoft.com/en-us/sql/t-sql/functions/ranking-functions-transact-sql)
 
 ## Agrégation
 
